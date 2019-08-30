@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+      <a mat-raised-button color="primary">
+        <mat-icon aria-hidden="false" matTooltip="Inicio">home</mat-icon>
+      </a>
+      <a mat-raised-button color="primary" [matMenuTriggerFor]="menu">
+        <mat-icon aria-hidden="false" matTooltip="Esporte">sports_soccer</mat-icon>
+      </a>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Campeonato</button>
+        <button mat-menu-item>Classificação</button>
+      </mat-menu>
+  </mat-toolbar>
+<router-outlet></router-outlet>
